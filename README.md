@@ -12,6 +12,8 @@ Static website for Chuck-it Landscaping & Yard Care in Arizona's White Mountains
 - `faqs.html` — frequently asked questions
 - `contact.html` — contact details and service area
 - `request-a-quote.html` — temporary quote-form preview
+- `robots.txt` — search-engine crawling rules
+- `sitemap.xml` — index of public website pages
 - `assets/site.css` — shared website styles
 - `assets/site.js` — navigation, footer, mobile menu, active-page state, and quote-form behavior
 - `assets/images/` — approved site imagery and grass texture
