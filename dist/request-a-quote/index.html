@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Free Estimate | Chuck-it</title>
+  <meta name="description" content="Preview the information needed to request a free landscaping or yard-care estimate from Chuck-it.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23141612'/%3E%3Cpath d='M11 43h42M18 35l9 8m19-23L28 43M39 17l8 7-5 6-8-7z' fill='none' stroke='%23f59e0b' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js" defer></script>
+</head>
+<body data-page="quote">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="page-hero"><div class="wrap page-hero-inner"><p class="page-kicker">Free on-site estimate</p><h1 class="page-title">Tell us what your property needs.</h1><p class="page-lede">Share the basics and Chuck will follow up to learn more, answer questions, and arrange an on-site estimate when needed.</p></div></section>
+    <section class="section"><div class="wrap quote-layout">
+      <aside class="quote-aside"><p class="eyebrow orange">What happens next</p><h2>A simple start.</h2><ol class="plain-list"><li>Send the property and service details.</li><li>Chuck follows up within 24 hours.</li><li>Schedule a free on-site estimate when needed.</li><li>Approve the quote before work begins.</li></ol><p><strong>Prefer to talk?</strong><br><a class="text-link" href="tel:+19282421788">Call (928) 242-1788</a></p></aside>
+      <form id="quote-preview-form" class="quote-form">
+        <div class="preview-banner"><strong>Form preview:</strong> This mock form does not send or store your information. It will be replaced by Chuck's secure Jobber request form before launch.</div>
+        <h2>Request an estimate</h2>
+        <div class="form-grid">
+          <div class="field"><label for="name">Name *</label><input id="name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
+          <div class="field"><label for="location">Property city or area *</label><input id="location" name="location" autocomplete="address-level2" required></div>
+          <div class="field"><label for="service">Service needed *</label><select id="service" name="service" required><option value="">Choose one</option><option>Yard or pine-needle cleanup</option><option>Weed removal</option><option>Rock spreading</option><option>Lawn mowing</option><option>Gutter cleaning</option><option>Tree trimming or removal</option><option>Seasonal snow removal</option><option>Not sure yet</option></select></div>
+          <div class="field"><label for="contact-method">Best way to reply</label><select id="contact-method" name="contact-method"><option>Phone call</option><option>Text message</option><option>Email</option></select></div>
+          <div class="field full"><label for="details">Tell us about the job *</label><textarea id="details" name="details" placeholder="What needs to be cleaned, removed, spread, mowed, or maintained?" required></textarea></div>
+          <div class="field full"><label for="photos">Optional property photos</label><input id="photos" name="photos" type="file" accept="image/*" multiple><span class="form-note">Photos selected here stay on your device in this preview.</span></div>
+        </div>
+        <button class="button" type="submit">Preview request</button>
+        <p id="form-result" class="form-result" tabindex="-1" hidden>Thanks—this confirms the preview form works. No information was sent. The live site will open Chuck's Jobber form here.</p>
+      </form>
+    </div></section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
