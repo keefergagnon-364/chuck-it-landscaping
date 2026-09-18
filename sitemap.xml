@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://keefergagnon-364.github.io/chuck-it-landscaping/</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-17</lastmod>
     <image:image>
       <image:loc>https://keefergagnon-364.github.io/chuck-it-landscaping/assets/images/hero-yard.jpg</image:loc>
     </image:image>
@@ -21,9 +21,21 @@
   </url>
   <url>
     <loc>https://keefergagnon-364.github.io/chuck-it-landscaping/gallery.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-17</lastmod>
     <image:image>
       <image:loc>https://keefergagnon-364.github.io/chuck-it-landscaping/assets/images/river-rock.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://keefergagnon-364.github.io/chuck-it-landscaping/assets/images/rock-landscaping-showcase.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://keefergagnon-364.github.io/chuck-it-landscaping/assets/images/lawn-care-before-after.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://keefergagnon-364.github.io/chuck-it-landscaping/assets/images/rock-spreading-showcase.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://keefergagnon-364.github.io/chuck-it-landscaping/assets/images/gravel-property-showcase.jpeg</image:loc>
     </image:image>
   </url>
   <url>
