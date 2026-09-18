@@ -19,7 +19,7 @@ if (headerMount) {
       </div>
       <div class="wrap nav-row">
         <a class="brand" href="${siteUrl()}" aria-label="Chuck-it home">
-          <img class="brand-logo" src="${siteUrl('assets/images/chuck-it-logo.jpeg')}" alt="" width="64" height="60">
+          <img class="brand-logo" src="${siteUrl('assets/images/chuck-it-logo-final.svg')}" alt="" width="1000" height="890">
           <span><strong>CHUCK-IT</strong><small>Landscaping &amp; Yard Care</small></span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -42,7 +42,7 @@ if (footerMount) {
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-brand">
-          <img class="footer-logo" src="${siteUrl('assets/images/chuck-it-logo.jpeg')}" alt="Chuck-it logo with pitchfork, shovel, and rake" width="160" height="149" loading="lazy">
+          <img class="footer-logo" src="${siteUrl('assets/images/chuck-it-logo-final.svg')}" alt="Chuck-it logo with pitchfork, shovel, and rake" width="1000" height="890" loading="lazy">
           <span>Cleaning America one yard at a time.</span>
           <p>Dependable landscaping and property care across Arizona's White Mountains.</p>
         </div>

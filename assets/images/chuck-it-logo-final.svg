@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1000"
+   height="890"
+   viewBox="0 0 1000 890"
+   role="img"
+   aria-labelledby="logo-title logo-desc"
+   version="1.1"
+   id="svg41"
+   sodipodi:docname="chuck-it-logo_Final.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:export-filename="chuck-it-logo_final.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs41" />
+  <sodipodi:namedview
+     id="namedview41"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.65228614"
+     inkscape:cx="371.00282"
+     inkscape:cy="497.48106"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg41" />
+  <title
+     id="logo-title">Chuck-it — three-tool logo</title>
+  <desc
+     id="logo-desc">Recreated from the business-card reference. Shovel, fan rake and pitchfork above the CHUCK-IT wordmark. All artwork and lettering are vector outlines. Transparent background.</desc>
+  <g
+     fill="#FFB11B"
+     id="g41">
+    <g
+       id="shovel"
+       transform="rotate(-9 310 341)">
+      <path
+         d="M310 91C284 108 264 140 262 168L260 254Q283 249 299 259L301 283H319L321 259Q337 249 361 254L359 168C356 137 336 105 310 91Z M309 137Q302 167 306 222L310 233L314 222Q318 167 309 137Z"
+         fill-rule="evenodd"
+         id="path1" />
+      <path
+         d="M302 275h17v67h-17Z"
+         id="path2" />
+    </g>
+    <g
+       id="fan-rake">
+      <path
+         d="M478.00 260L347.00 140.00Q346.00 129.00 352.00 125.00L358.00 129.00L355.00 141.00L484.00 260Z"
+         id="path3" />
+      <path
+         d="M480.11 260L363.56 127.62Q362.56 116.62 368.56 112.62L374.56 116.62L371.56 128.62L486.11 260Z"
+         id="path4" />
+      <path
+         d="M482.22 260L380.11 116.69Q379.11 105.69 385.11 101.69L391.11 105.69L388.11 117.69L488.22 260Z"
+         id="path5" />
+      <path
+         d="M484.33 260L396.67 107.22Q395.67 96.22 401.67 92.22L407.67 96.22L404.67 108.22L490.33 260Z"
+         id="path6" />
+      <path
+         d="M486.44 260L413.22 99.21Q412.22 88.21 418.22 84.21L424.22 88.21L421.22 100.21L492.44 260Z"
+         id="path7" />
+      <path
+         d="M488.56 260L429.78 92.65Q428.78 81.65 434.78 77.65L440.78 81.65L437.78 93.65L494.56 260Z"
+         id="path8" />
+      <path
+         d="M490.67 260L446.33 87.56Q445.33 76.56 451.33 72.56L457.33 76.56L454.33 88.56L496.67 260Z"
+         id="path9" />
+      <path
+         d="M492.78 260L462.89 83.91Q461.89 72.91 467.89 68.91L473.89 72.91L470.89 84.91L498.78 260Z"
+         id="path10" />
+      <path
+         d="M494.89 260L479.44 81.73Q478.44 70.73 484.44 66.73L490.44 70.73L487.44 82.73L500.89 260Z"
+         id="path11" />
+      <path
+         d="M497.00 260L496.00 81.00Q495.00 70.00 501.00 66.00L507.00 70.00L504.00 82.00L503.00 260Z"
+         id="path12" />
+      <path
+         d="M499.11 260L512.56 81.73Q511.56 70.73 517.56 66.73L523.56 70.73L520.56 82.73L505.11 260Z"
+         id="path13" />
+      <path
+         d="M501.22 260L529.11 83.91Q528.11 72.91 534.11 68.91L540.11 72.91L537.11 84.91L507.22 260Z"
+         id="path14" />
+      <path
+         d="M503.33 260L545.67 87.56Q544.67 76.56 550.67 72.56L556.67 76.56L553.67 88.56L509.33 260Z"
+         id="path15" />
+      <path
+         d="M505.44 260L562.22 92.65Q561.22 81.65 567.22 77.65L573.22 81.65L570.22 93.65L511.44 260Z"
+         id="path16" />
+      <path
+         d="M507.56 260L578.78 99.21Q577.78 88.21 583.78 84.21L589.78 88.21L586.78 100.21L513.56 260Z"
+         id="path17" />
+      <path
+         d="M509.67 260L595.33 107.22Q594.33 96.22 600.33 92.22L606.33 96.22L603.33 108.22L515.67 260Z"
+         id="path18" />
+      <path
+         d="M511.78 260L611.89 116.69Q610.89 105.69 616.89 101.69L622.89 105.69L619.89 117.69L517.78 260Z"
+         id="path19" />
+      <path
+         d="M513.89 260L628.44 127.62Q627.44 116.62 633.44 112.62L639.44 116.62L636.44 128.62L519.89 260Z"
+         id="path20" />
+      <path
+         d="M516.00 260L645.00 140.00Q644.00 129.00 650.00 125.00L656.00 129.00L653.00 141.00L522.00 260Z"
+         id="path21" />
+      <path
+         d="m 363.41714,152.14921 c 99.59789,-57.84888 180.02043,-55.497089 273.00308,0.1355 L 622,166 c -81.33333,-48 -162.66667,-48 -244,0 z"
+         id="path22"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         d="m 430.63214,216.60959 c 66.03786,-27.27954 80.8092,-26.51012 141.86685,-2.48272 L 509.67,274 h -20.45045 z"
+         id="path23"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         d="M492 269h16v73h-16Z"
+         id="path24" />
+    </g>
+    <g
+       id="pitchfork"
+       transform="rotate(8 689 341)">
+      <path
+         d="M638 114H650V245H668V114H680V245H698V114H710V245H728V114H740V255Q740 276 719 276H700V292H678V276H659Q638 276 638 255Z"
+         id="path25" />
+      <path
+         d="M681 283h16v59h-16Z"
+         id="path26" />
+    </g>
+    <g
+       id="frame">
+      <path
+         d="M85 336h830v16h-830Z"
+         id="path27" />
+      <path
+         d="M85 626h830v16h-830Z"
+         id="path28" />
+    </g>
+    <g
+       id="wordmark">
+      <g
+         transform="translate(118 408)"
+         id="g29">
+        <path
+           d="M14 0H84L98 14V46H71V27H27V133H71V114H98V146L84 160H14L0 146V14Z"
+           id="path29" />
+      </g>
+      <g
+         transform="translate(230 408)"
+         id="g30">
+        <path
+           d="M0 0H27V65H71V0H98V160H71V92H27V160H0Z"
+           id="path30" />
+      </g>
+      <g
+         transform="translate(342 408)"
+         id="g31">
+        <path
+           d="M0 0H27V133H71V0H98V146L84 160H14L0 146Z"
+           id="path31" />
+      </g>
+      <g
+         transform="translate(454 408)"
+         id="g32">
+        <path
+           d="M14 0H84L98 14V46H71V27H27V133H71V114H98V146L84 160H14L0 146V14Z"
+           id="path32" />
+      </g>
+      <g
+         transform="translate(566 408)"
+         id="g33">
+        <path
+           d="M0 0H27V64L67 0H98L51 76L98 160H66L32 99L27 107V160H0Z"
+           id="path33" />
+      </g>
+      <g
+         transform="translate(678 408)"
+         id="g34">
+        <path
+           d="M0 66H50V93H0Z"
+           id="path34" />
+      </g>
+      <g
+         transform="translate(742 408)"
+         id="g35">
+        <path
+           d="M0 0H28V160H0Z"
+           id="path35" />
+      </g>
+      <g
+         transform="translate(784 408)"
+         id="g36">
+        <path
+           d="M0 0H98V27H63V160H35V27H0Z"
+           id="path36" />
+      </g>
+    </g>
+    <g
+       id="lower-tool-handles">
+      <path
+         d="m 350.91389,636.00335 17.54384,-4.02659 12.5272,54.58085 -17.54384,4.02659 z"
+         id="path37" />
+      <path
+         d="m 361.65149,682.78694 c 3.27564,18.74221 -30.02245,34.59267 -21.52185,71.62968 l 7.1584,31.18906 89.66853,-20.58041 -7.15839,-31.18905 c -8.5006,-37.03701 -45.3779,-36.78107 -50.60284,-55.07588 z m 15.48292,27.22644 q -26.77904,17.43224 -21.18655,41.79869 l 3.35551,14.61987 58.47947,-13.42198 -3.35549,-14.61989 q -5.5925,-24.36645 -37.29294,-28.37669 z"
+         fill-rule="evenodd"
+         id="path38" />
+      <path
+         d="m 653.50188,635.41915 -17.54384,-4.02659 -12.5272,54.58085 L 640.97468,690 Z"
+         id="path37-8" />
+      <path
+         d="m 642.76428,682.20274 c -3.27564,18.74221 30.02245,34.59267 21.52185,71.62968 l -7.1584,31.18906 -89.66853,-20.58041 7.15839,-31.18905 c 8.5006,-37.03701 45.3779,-36.78107 50.60284,-55.07588 z m -15.48292,27.22644 q 26.77904,17.43224 21.18655,41.79869 l -3.35551,14.61987 -58.47947,-13.42198 3.35549,-14.61989 q 5.5925,-24.36645 37.29294,-28.37669 z"
+         fill-rule="evenodd"
+         id="path38-4" />
+      <path
+         d="M492 640h16v189h-16Z"
+         id="path41" />
+    </g>
+  </g>
+  <path
+     style="display:none;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 292.03761,285.12199 380,771"
+     id="path42" />
+  <path
+     style="display:none;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 309.816,282.30617 380.492,698"
+     id="path43" />
+  <path
+     style="display:none;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 684.92653,290.94596 636,680.77954"
+     id="path44" />
+  <path
+     style="display:none;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 706.71243,294.00777 632.21521,735.39379"
+     id="path45" />
+  <metadata
+     id="metadata45">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Chuck-it — three-tool logo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
