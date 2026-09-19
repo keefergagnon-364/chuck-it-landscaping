@@ -2,8 +2,7 @@ const siteScript = document.currentScript || document.querySelector('script[src$
 const SITE_ROOT = siteScript ? new URL('../', siteScript.src) : new URL('./', window.location.href);
 const siteUrl = (path = '') => new URL(path.replace(/^\/+/, ''), SITE_ROOT).href;
 
-// Replace this one placeholder with Chuck's live Jobber request-form URL when available.
-const JOBBER_URL = siteUrl('request-a-quote.html');
+const QUOTE_URL = siteUrl('request-a-quote.html');
 
 const headerMount = document.querySelector('#site-header');
 const footerMount = document.querySelector('#site-footer');
@@ -31,7 +30,7 @@ if (headerMount) {
           <a href="${siteUrl('reviews.html')}">Reviews</a>
           <a href="${siteUrl('faqs.html')}">FAQs</a>
           <a href="${siteUrl('contact.html')}">Contact</a>
-          <a class="button button-small" data-quote-link href="${JOBBER_URL}">Request a quote</a>
+          <a class="button button-small" data-quote-link href="${QUOTE_URL}">Request a quote</a>
         </nav>
       </div>
     </header>`;
@@ -54,7 +53,7 @@ if (footerMount) {
 }
 
 document.querySelectorAll('[data-quote-link]').forEach((link) => {
-  link.setAttribute('href', JOBBER_URL);
+  link.setAttribute('href', QUOTE_URL);
 });
 
 document.querySelectorAll('[data-year]').forEach((node) => {
@@ -84,13 +83,84 @@ document.querySelectorAll('.site-nav a:not(.button)').forEach((link) => {
   if (target === path) link.setAttribute('aria-current', 'page');
 });
 
-const quoteForm = document.querySelector('#quote-preview-form');
+const quoteForm = document.querySelector('#quote-form');
 if (quoteForm) {
-  quoteForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const result = document.querySelector('#form-result');
+  const endpoint = String(window.CHUCK_IT_FORM_ENDPOINT || '').trim();
+  const configured = /^https:\/\/formspree\.io\/f\/[a-zA-Z0-9]+$/.test(endpoint);
+  const fields = quoteForm.querySelector('fieldset');
+  const submit = quoteForm.querySelector('button[type="submit"]');
+  const availability = document.querySelector('#form-availability');
+  const result = document.querySelector('#form-result');
+  const email = quoteForm.elements.email;
+  const contactMethod = quoteForm.elements['contact-method'];
+  let sending = false;
+
+  const updateEmailRequirement = () => {
+    email.required = contactMethod.value === 'Email';
+    document.querySelector('#email-required').hidden = !email.required;
+  };
+  contactMethod.addEventListener('change', updateEmailRequirement);
+  updateEmailRequirement();
+
+  if (configured) {
+    quoteForm.action = endpoint;
+    fields.disabled = false;
+    submit.disabled = false;
+    availability.hidden = true;
+  }
+
+  const showResult = (message, state) => {
+    result.textContent = message;
+    result.dataset.state = state;
     result.hidden = false;
     result.focus();
-    quoteForm.reset();
+  };
+
+  quoteForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (sending) return;
+    if (!configured) {
+      showResult('Online requests are not available yet. Please call or text (928) 242-1788.', 'error');
+      return;
+    }
+    if (!quoteForm.reportValidity() || quoteForm.elements._gotcha.value) return;
+
+    // Read values before disabling controls. Never clear an unconfirmed request.
+    const data = new FormData(quoteForm);
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 30000);
+    sending = true;
+    fields.disabled = true;
+    submit.disabled = true;
+    submit.textContent = 'Sending…';
+    quoteForm.setAttribute('aria-busy', 'true');
+    result.hidden = true;
+
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+        signal: controller.signal
+      });
+      if (response.ok) {
+        quoteForm.reset();
+        updateEmailRequirement();
+        showResult('Thank you! Your estimate request has been sent. We will follow up within 24 hours. You can text property photos to (928) 242-1788.', 'success');
+      } else {
+        showResult(response.status === 429
+          ? 'Online requests are temporarily at capacity. Your details are still here. Please call or text (928) 242-1788 for an estimate.'
+          : 'Your request was not accepted. Please check your details and try again, or call or text (928) 242-1788. Your details have been kept here.', 'error');
+      }
+    } catch {
+      showResult('We could not confirm delivery. Your details are still here. Please call or text (928) 242-1788 before submitting again so we can avoid a duplicate request.', 'error');
+    } finally {
+      clearTimeout(timeout);
+      sending = false;
+      fields.disabled = false;
+      submit.disabled = false;
+      submit.textContent = 'Send estimate request';
+      quoteForm.removeAttribute('aria-busy');
+    }
   });
 }

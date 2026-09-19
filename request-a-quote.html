@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Request a Free Estimate | Chuck-it</title>
-  <meta name="description" content="Preview the information needed to request a free landscaping or yard-care estimate from Chuck-it.">
+  <meta name="description" content="Request a free on-site estimate for landscaping, yard cleanup, rock spreading, or property care from Chuck-it in Arizona's White Mountains.">
   <meta name="robots" content="noindex,follow">
   <meta name="theme-color" content="#141612">
   <link rel="canonical" href="https://keefergagnon-364.github.io/chuck-it-landscaping/request-a-quote.html">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/form-config.js" defer></script>
   <script src="assets/site.js" defer></script>
 </head>
 <body data-page="quote">
@@ -20,21 +21,28 @@
     <section class="page-hero"><div class="wrap page-hero-inner"><p class="page-kicker">Free on-site estimate</p><h1 class="page-title">Tell us what your property needs.</h1><p class="page-lede">Share the basics and we will follow up to learn more, answer questions, and arrange an on-site estimate when needed.</p></div></section>
     <section class="section"><div class="wrap quote-layout">
       <aside class="quote-aside"><p class="eyebrow orange">What happens next</p><h2>A simple start.</h2><ol class="plain-list"><li>Send the property and service details.</li><li>We follow up within 24 hours.</li><li>Schedule a free on-site estimate when needed.</li><li>Approve the quote before work begins.</li></ol><p><strong>Prefer to talk?</strong><br><a class="text-link" href="tel:+19282421788">Call (928) 242-1788</a></p></aside>
-      <form id="quote-preview-form" class="quote-form">
-        <div class="preview-banner"><strong>Form preview:</strong> This mock form does not send or store your information. It will be replaced by our secure Jobber request form before launch.</div>
+      <form id="quote-form" class="quote-form" method="post">
+        <p id="form-availability" class="form-availability"><strong>Online requests are being set up.</strong> For a free estimate, <a href="tel:+19282421788">call</a> or <a href="sms:+19282421788">text (928) 242-1788</a>. This form is unavailable until our connection is ready.</p>
         <h2>Request an estimate</h2>
+        <noscript><p>Please enable JavaScript to send an online request, or call or text (928) 242-1788.</p></noscript>
+        <fieldset disabled>
+        <legend class="visually-hidden">Your contact information and project details</legend>
+        <input type="hidden" name="_subject" value="New Chuck-it estimate request">
+        <div class="form-honeypot" aria-hidden="true"><label for="website">Leave this field blank</label><input id="website" name="_gotcha" tabindex="-1" autocomplete="off"></div>
         <div class="form-grid">
           <div class="field"><label for="name">Name *</label><input id="name" name="name" autocomplete="name" required></div>
           <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
-          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
+          <div class="field"><label for="email">Email <span id="email-required" hidden>*</span></label><input id="email" name="email" type="email" autocomplete="email"></div>
           <div class="field"><label for="location">Property city or area *</label><input id="location" name="location" autocomplete="address-level2" required></div>
           <div class="field"><label for="service">Service needed *</label><select id="service" name="service" required><option value="">Choose one</option><option>Yard or pine-needle cleanup</option><option>Weed removal</option><option>Rock spreading</option><option>Lawn mowing</option><option>Gutter cleaning</option><option>Tree trimming or removal</option><option>Seasonal snow removal</option><option>Not sure yet</option></select></div>
           <div class="field"><label for="contact-method">Best way to reply</label><select id="contact-method" name="contact-method"><option>Phone call</option><option>Text message</option><option>Email</option></select></div>
           <div class="field full"><label for="details">Tell us about the job *</label><textarea id="details" name="details" placeholder="What needs to be cleaned, removed, spread, mowed, or maintained?" required></textarea></div>
-          <div class="field full"><label for="photos">Optional property photos</label><input id="photos" name="photos" type="file" accept="image/*" multiple><span class="form-note">Photos selected here stay on your device in this preview.</span></div>
         </div>
-        <button class="button" type="submit">Preview request</button>
-        <p id="form-result" class="form-result" tabindex="-1" hidden>Thanks—this confirms the preview form works. No information was sent. The live site will open our Jobber form here.</p>
+        </fieldset>
+        <p class="form-note">Have property photos? <a class="text-link" href="sms:+19282421788">Text them to (928) 242-1788</a> with your name and project details.</p>
+        <p class="form-note">When you submit, Formspree processes your contact and project details so Chuck-it can respond to your request. Please do not include payment information or other sensitive details.</p>
+        <button class="button" type="submit" disabled>Send estimate request</button>
+        <p id="form-result" class="form-result" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></p>
       </form>
     </div></section>
   </main>
