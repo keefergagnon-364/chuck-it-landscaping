@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://keefergagnon-364.github.io/chuck-it-landscaping/sitemap.xml
+Sitemap: https://chuckitlandscaping.com/sitemap.xml
